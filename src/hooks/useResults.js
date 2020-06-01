@@ -11,7 +11,7 @@ export default () => {
         params: {
           limit: 50,
           term: searchTerm,
-          location: 'san jose'
+          location: 'san francisco'
         }
       });
       setResults(response.data.businesses);
@@ -21,7 +21,7 @@ export default () => {
   }
 
   useEffect(() => {
-    searchApi('pasta');
+    searchApi('cocktail');
   }, []);
 
   return [searchApi, results, errorMessage]
